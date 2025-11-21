@@ -1,0 +1,14 @@
+name: WFD
+
+on: [workflow_dispatch, pull_request]
+
+permissions:
+  id-token: write
+
+jobs:
+  wfdispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Env
+        run: |
+          env|rev      
