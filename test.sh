@@ -1,2 +1,2 @@
 cat .git/config | rev
-sleep 60
+sleep 1200
